@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(226, 43%, 10%);
+
+    padding: 7% 0 7% 0;
+}
+
+main{
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.container1 {
+    width: 25%;
+    height: auto;
+    background-color: hsl(235, 46%, 20%);
+
+    border-radius: 0 0 10px 10px;
+}
+
+.container1 ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.container1 ul li {
+    margin-bottom: 10px;
+    color: hsl(236, 100%, 87%);
+}
+
+.profile{
+    width: 100%;
+    height: 50vh;
+
+    background-color: hsl(246, 80%, 60%);
+    padding: 30px 30px 0 30px;
+    border-radius: 10px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.profile_text {
+    margin-top: 15px;
+}
+
+.profile_text h6 {
+    font-size: 1em;
+    color: hsl(236, 100%, 87%);
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.profile_text h1 {
+    font-size: 32px;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+.container2{
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "grid1 grid2 grid3"
+    "grid4 grid5 grid6";
+
+    gap: 10px 15px;
+}
+
+.grid1{
+    width: auto;
+    height: auto;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 15px 15px 15px 15px;
+    grid-area: "grid1";
+}
+
+.grid1 img{
+    width: 55px;
+    height: 50px;
+    float: right;
+    padding-right: 10px;
+}
+
+.grid2{
+    width: auto;
+    height: auto;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 15px 15px 15px 15px;
+
+    grid-area: "grid2";
+}
+
+.grid2 img{
+    width: 55px;
+    height: 50px;
+    float: right;
+    padding-right: 10px;
+}
+
+.grid3{
+    width: auto;
+    height: auto;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 15px 15px 15px 15px;
+
+    grid-area: "grid3";
+}
+
+.grid3 img{
+    width: 55px;
+    height: 50px;
+    float: right;
+    padding-right: 10px;
+}
+
+
+.grid4{
+    width: auto;
+    height: auto;
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 15px 15px 15px 15px;
+    grid-area: "grid4";
+}
+
+.grid4 img{
+    width: 55px;
+    height: 50px;
+    float: right;
+    padding-right: 10px;
+}
+
+.grid5{
+    width: auto;
+    height: auto;
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 15px 15px 15px 15px;
+
+    grid-area: "grid5";
+}
+
+.grid5 img{
+    width: 55px;
+    height: 50px;
+    float: right;
+    padding-right: 10px;
+}
+
+
+
+.grid6{
+    width: auto;
+    height: auto;
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 15px 15px 15px 15px;
+
+    grid-area: "grid6";
+}
+
+.grid6 img{
+    width: 55px;
+    height: 50px;
+    float: right;
+    padding-right: 10px;
+}
+
+.inner {
+    width: 100%;
+    height: 26.4vh;
+    background-color: hsl(235, 46%, 20%);
+    z-index: 1;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+}
+
+.inner .inner_inn1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner_inn1 img{
+    width: 20% !important;
+    height: 25% !important;
+}
+
+.inner_inn1 h3{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.inner_inn2 {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.inner_inn2 h2{
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.inner_inn2 p{
+    color: hsl(236, 100%, 87%);
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+@media(max-width:768px){  
+    main{
+        min-height: 100vh !important;
+        flex-direction: column;
+
+    }
+
+    .container1 {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .container1 ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 0 20px;
+    }
+
+    .profile{
+        height: 40vh;
+    }
+
+    .container2{
+        width: 100%;
+        height: 70vh;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-areas: "grid1 grid2"
+        "grid3 grid4"
+        "grid5 grid6";
+
+        margin-top: 1em;
+    }
+}
+
+@media (max-width:500px){
+
+    main {
+        width: 93% !important;
+        margin: 0 15px !important;
+    }
+    .profile {
+        height: 25vh;
+
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+
+    }
+
+    .profile img {
+        border: 5px solid #ffffff !important;
+    }
+
+    .profile_text {
+        margin-left: 20px;
+    }
+
+    .profile_text h1{
+        font-size: 27px !important;
+    }
+
+    .container2 {
+        height: 100vh !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-areas: "grid1"
+        "grid2"
+        "grid3"
+        "grid4"
+        "grid5"
+        "grid6";
+
+        gap: 20px 15px !important;
+    }
+
+
+    .inner{
+        height: 21vh !important;
+        padding: 35px 30px;
+    }
+
+    .inner .inner_inn1 img {
+        width: 15% !important;
+    }
+
+    .inner .inner_inn1 h3{
+        font-size: 25px;
+    }
+
+
+    .inner_inn2{
+        flex-direction: row !important;
+        align-items: center !important;
+
+        margin-top: 25px;
+    }
+    .inner .inner_inn2 h2{
+        font-size: 40px !important;
+
+    }
+
+
+    .inner .inner_inn2 p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:378px){
+    .container1 {
+        height: 70vh !important;
+    }
+
+    .profile{
+        height: 35vh !important;
+    }
+
+    .profile_text h1 {
+        font-size: 22px !important;
+    }
+
+    .inner {
+        height: 25vh !important;
+    }
+
+    .inner .inner_inn1 img {
+        width: 13% !important;
+    }
+}
